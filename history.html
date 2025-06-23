@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather History</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #2e2e2e;
+      color: #e0e0e0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #3a3a3a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 24px;
+      position: relative;
+    }
+
+    .back-btn {
+      position: absolute;
+      left: 20px;
+      top: 20px;
+      background-color: #4fc3f7;
+      color: #2e2e2e;
+      padding: 6px 12px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    main {
+      flex: 1;
+      padding: 40px;
+    }
+
+    table {
+      width: 100%;
+      max-width: 900px;
+      margin: auto;
+      border-collapse: collapse;
+      background: #3a3a3a;
+      border-radius: 8px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+      overflow: hidden;
+    }
+
+    th, td {
+      padding: 14px;
+      text-align: center;
+      border-bottom: 1px solid #4a4a4a;
+    }
+
+    th {
+      background: #4a4a4a;
+      color: #4fc3f7;
+    }
+
+    tr:hover {
+      background-color: #444;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="/" class="back-btn">← Back to Weather Dashboard</a>
+    📘 Weather History
+  </header>
+
+  <main>
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>City</th>
+        <th>Temperature (°C)</th>
+        <th>Saved On</th>
+      </tr>
+      {% for r in history %}
+      <tr>
+  <td>{{ r['Location ID'] }}</td>
+  <td>{{ r['City'] }}</td>
+  <td>{{ r['Temperature'] }}</td>
+  <td>{{ r['Timestamp'] }}</td>
+</tr>
+      {% endfor %}
+    </table>
+  </main>
+
+</body>
+</html>

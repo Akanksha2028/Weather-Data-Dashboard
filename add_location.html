@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add Location - Dark Grey Theme</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #2e2e2e; /* softer grey background */
+      color: #e0e0e0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #3a3a3a; /* dark grey header */
+      color: #ffffff;
+      text-align: center;
+      padding: 20px;
+      font-size: 24px;
+      position: relative;
+    }
+
+    .back-btn {
+      position: absolute;
+      left: 20px;
+      top: 20px;
+      background-color: #4fc3f7;
+      color: #2e2e2e;
+      padding: 6px 12px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    .form-container {
+      background-color: #3a3a3a;
+      padding: 40px 35px;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+      width: 100%;
+      max-width: 440px;
+    }
+
+    .form-container h2 {
+      text-align: center;
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
+
+    .form-container p {
+      text-align: center;
+      color: #bbbbbb;
+      font-size: 14px;
+      margin-bottom: 25px;
+    }
+
+    input[type="text"],
+    input[type="number"] {
+      width: 100%;
+      padding: 14px;
+      margin: 12px 0;
+      border-radius: 6px;
+      border: 1px solid #555;
+      background-color: #4a4a4a;
+      color: #ffffff;
+      font-size: 16px;
+    }
+
+    button {
+      width: 100%;
+      padding: 14px;
+      background-color: #4fc3f7;
+      color: #2e2e2e;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .note {
+      text-align: center;
+      font-size: 13px;
+      color: #aaa;
+      margin-top: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="/" class="back-btn">← Back to Weather Dashboard</a>
+    Add New Weather Entry
+  </header>
+
+  <main>
+    <div class="form-container">
+      <h2>Add Location Data</h2>
+      <p>Enter city and temperature. The system auto-generates date & ID.</p>
+      <form method="POST" action="/add_location">
+      <input type="text" name="city" placeholder="Enter city (e.g., Solapur)" required>
+      <input type="number" step="0.1" name="temperature" placeholder="Enter temp (e.g., 32.5)" required>
+      <button type="submit">Save</button>
+</form>
+
+    </div>
+  </main>
+
+</body>
+</html>
