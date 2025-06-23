@@ -15,6 +15,8 @@ Weather records are saved with timestamps and unique location IDs in an Excel fi
 
 # Weather-Data-Dashboard
 This is a simple Flask web app to store and view weather data for different cities. Users can add city name and temperature, and the app automatically saves the entry with a unique ID and timestamp in an Excel file. You can also view all saved weather history in order. The app uses a clean, dark-themed UI and works without any database.
+
+
 weather-data-dashboard/
 │
 ├── app.py
