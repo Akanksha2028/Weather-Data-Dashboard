@@ -31,7 +31,7 @@ Data is stored in an `Excel` file. No SQL database is used — making it beginne
 ## 📸 Screenshots
 
 ### 🏠 Home Page
-![Home Page](images/Home_page.png)
+![Home Page](https://github.com/Akanksha2028/Weather-Data-Dashboard/raw/main/images/Home_page.png)
 
 ### 🌤️ Weather Result with Emoji
 ![Weather Display](images/emoji_weather.png)
