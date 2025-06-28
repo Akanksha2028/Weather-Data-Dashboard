@@ -44,6 +44,8 @@ Data is stored in an `Excel` file. No SQL database is used — making it beginne
 ### ✅ Success Popup
 ![Saved_Successful_page](https://github.com/user-attachments/assets/f41425fd-cd5b-4f49-9b7f-9de4118ac367)
 
+
+🗂️ Project Structure
 weather_application/
 ├── app.py
 ├── Data.xlsx
