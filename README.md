@@ -20,7 +20,6 @@ Data is stored in an `Excel` file. No SQL database is used — making it beginne
 ## 🔧 Features
 
 - 💻 Built using Python + Flask
-- 🌗 Dark Grey Theme with Bootstrap 5
 - 🌤️ Animated weather emojis
 - 📁 Excel file (`Data.xlsx`) as the database
 - 📊 History table sorted by location ID
@@ -31,25 +30,39 @@ Data is stored in an `Excel` file. No SQL database is used — making it beginne
 ## 📸 Screenshots
 
 ### 🏠 Home Page
-![Home Page](https://github.com/Akanksha2028/Weather-Data-Dashboard/raw/main/images/Home_page.png)
+![Home_page](https://github.com/user-attachments/assets/1fede736-cc30-4bb5-b7aa-37d03ccf7589)
 
-### 🌤️ Weather Result with Emoji
-![Weather Display](images/emoji_weather.png)
+### 🌤️ Get Weather Page
+![Get_Weather_Page](https://github.com/user-attachments/assets/e985283c-7e45-4e8b-a315-35da26574afe)
 
-### ➕ Add Location
-![Add Location](images/add_location.png)
+### ➕ Add Location Page
+![Add_Location_page](https://github.com/user-attachments/assets/cea5527c-08ce-416a-8487-54d3e8122269)
 
-### 📋 Weather History
-![Weather History](images/weather_history.png)
+### 📋 Weather History page
+![Weather_History_page](https://github.com/user-attachments/assets/178ee06f-e921-43e8-8814-2fcdf03d0448)
 
 ### ✅ Success Popup
-![Success Popup](images/success_popup.png)
+![Saved_Successful_page](https://github.com/user-attachments/assets/f41425fd-cd5b-4f49-9b7f-9de4118ac367)
 
----
+weather_application/
+├── app.py
+├── Data.xlsx
+├── requirements.txt
+├── README.md
+│
+├── templates/
+│   ├── index.html
+│   ├── add_location.html
+│   ├── history.html
+│   └── success_popup.html
+│
+├── static/
+│   └── style.css
+│
+└── images/
+    ├── Home_page.png
+    ├── emoji_weather.png
+    ├── add_location.png
+    ├── weather_history.png
+    └── success_popup.png
 
-## 🚀 How to Run
-
-1. Clone this repo  
-   ```bash
-   git clone https://github.com/YourUsername/Weather-Data-Dashboard.git
-   cd Weather-Data-Dashboard
