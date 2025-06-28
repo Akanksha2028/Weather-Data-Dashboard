@@ -3,13 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <title>Saved</title>
+
+  <!-- Bootstrap & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  <!-- Your CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+  <!-- Auto alert + redirect -->
   <script>
     window.onload = function () {
       alert("✅ Location saved successfully!");
-      window.location.href = "/history";
+      window.location.href = "/";
     }
   </script>
 </head>
-<body style="background-color: #2e2e2e;">
+<body style="background-color: #2e2e2e; color: white; display: flex; align-items: center; justify-content: center; height: 100vh;">
+
+  <div class="popup-message text-center">
+    ✅ Location saved successfully! Redirecting to history...
+  </div>
+
 </body>
 </html>
