@@ -1,0 +1,110 @@
+/* General Body Styling */
+body {
+  background-color: #2e2e2e;
+  font-family: 'Segoe UI', sans-serif;
+  color: #e0e0e0;
+  margin: 0;
+  padding: 50px 20px;
+}
+
+/* Headings */
+h2, h4 {
+  color: #4fc3f7;
+  font-weight: 600;
+}
+
+/* Input Fields */
+.form-outline-light {
+  background-color: transparent;
+  border: 1px solid #f8f9fa;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px 15px;
+  width: 100%;
+}
+
+.form-outline-light::placeholder {
+  color: #bbb;
+}
+
+.form-outline-light:focus {
+  border-color: #f8f9fa;
+  outline: none;
+  box-shadow: none;
+  background-color: transparent;
+  color: #fff;
+}
+
+/* Outline Buttons */
+.btn-outline-light {
+  border-radius: 10px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.btn-outline-light:hover {
+  background-color: #ffffff;
+  color: #2e2e2e;
+  box-shadow: none;
+}
+
+.btn-outline-light:active {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  border-color: #ffffff !important;
+  box-shadow: none !important;
+}
+
+/* Weather Result Card */
+.weather-result {
+  background-color: #3a3a3a;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* Table Styling (history) */
+.table-container {
+  background-color: #3a3a3a;
+  padding: 30px;
+  border-radius: 16px;
+  max-width: 900px;
+  margin: auto;
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #fff;
+}
+
+thead {
+  background-color: #4a4a4a;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #555;
+}
+
+th {
+  color: #4fc3f7;
+}
+
+tr:hover {
+  background-color: #444;
+}
+
+/* Success Popup Text */
+.popup-message {
+  font-size: 18px;
+  padding: 20px;
+  background-color: #3a3a3a;
+  border-radius: 10px;
+  color: #ffffff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
